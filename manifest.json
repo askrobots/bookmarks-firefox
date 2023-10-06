@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Bookmark Saver",
+    "version": "1.0",
+    "description": "Saves bookmarks to my API",
+    "icons": {
+        "48": "icon.png"
+    },
+    "permissions": [
+        "activeTab",
+        "https://q9.is/"
+    ],
+    "browser_action": {
+       "default_icon": "icon.png",
+       "default_popup": "popup.html"
+    },
+    "content_security_policy": "script-src 'self'; object-src 'self'; connect-src https://q9.is;"
+}
