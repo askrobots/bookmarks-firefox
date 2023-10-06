@@ -8,11 +8,20 @@
     },
     "permissions": [
         "activeTab",
-        "https://q9.is/"
+        "https://q9.is/",
+        "storage"
     ],
     "browser_action": {
        "default_icon": "icon.png",
        "default_popup": "popup.html"
+    },
+    "options_ui": {
+        "page": "settings.html",
+        "chrome_style": true
+    },
+    "background": {
+            "scripts": ["background.js"],
+            "persistent": false
     },
     "content_security_policy": "script-src 'self'; object-src 'self'; connect-src https://q9.is;"
 }
