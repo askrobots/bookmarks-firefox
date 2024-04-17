@@ -12,23 +12,26 @@ a simple user interface, making bookmark management effortless.
 
 ## Getting Started
 
-To get started with AskRobots Extension, follow these steps:
 
-1. **Install the Extension:**
-    - Download and install the AskRobots Extension from the Firefox Add-ons store or from the GitHub releases page.
+This initial developer release allows you to load and test the AskRobots Extension directly from the source code:
 
-2. **Obtain your API Token:**
-    - Log in to your account on the AskRobots web application.
-    - Navigate to the settings page.
-    - Find the section labeled "API Token" and copy your personal API token.
+1. **Open Firefox Developer Toolbar**:
+   - Navigate to `about:debugging`.
+   - Click on "This Firefox" (or enter `about:debugging#/runtime/this-firefox` in the address bar).
 
-3. **Configure the Extension:**
-    - Click on the AskRobots Extension icon in the Firefox toolbar.
-    - Click on the "Settings" button in the popup.
-    - Paste your API token into the "API Token" field and click "Save".
+2. **Load the Temporary Extension**:
+   - Click "Load Temporary Add-on".
+   - Navigate to the cloned repository folder and select the `manifest.json` file. Clone the repo if you haven't already:
+     ```bash
+     git clone https://github.com/askrobots/bookmarks-firefox.git
+     ```
 
-Now you're all set! Click on the AskRobots Extension icon while on any webpage to save it as a bookmark to your AskRobots account. 
-The button will turn green to indicate a successful save, or red if there was an error.
+3. **Sign Up and API Key Integration**:
+   - Sign up at [askrobots.com](https://askrobots.com/signup) to obtain your API key.
+   - Once signed up, navigate to your [account settings](https://askrobots.com/userauth/apikeys/) to find and copy your API key.
+   - Integrate this API key into the bookmarks app through the extension's settings menu.
+
+Now you're all set to use the extension in developer mode! Click the AskRobots Extension icon while on any webpage to save it as a bookmark to your AskRobots account. The button will indicate a successful save or an error if it occurs.
 
 ## Support
 
