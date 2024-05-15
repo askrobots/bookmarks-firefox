@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     try {
         let { apiToken: token } = await browser.storage.local.get('apiToken');
-        const response = await fetch(`https://askrobots.com/home/api/check_link/?url=${encodeURIComponent(url)}`, {
+        const response = await fetch(`https://askrobots.com/api/check_link/?url=${encodeURIComponent(url)}`, {
             method: 'GET',
             headers: {
                 'Authorization': `Token ${token}`,
@@ -45,7 +45,7 @@ async function saveBookmark() {
 
     try {
         let { apiToken: token } = await browser.storage.local.get('apiToken');
-        const response = await fetch('https://askrobots.com/home/api/links/', {
+        const response = await fetch('https://askrobots.com/api/links/', {
             method: 'POST',
             headers: {
                 'Authorization': `Token ${token}`,
